@@ -40,6 +40,8 @@ public class commonUtilities {
 			caps.setPlatform(Platform.MAC);
 		if (testMode.equalsIgnoreCase("junit"))
 			caps.setCapability("build", "Junit - Sample");
+		else 
+			caps.setCapability("build", "TestNG - Sample");
 		String remoteUrl = "https://"+PropertyManager.getPropertyVal("username")+":"+PropertyManager.getPropertyVal("accesskey")+PropertyManager.getPropertyVal("huburl"); 
 		System.out.println("remoteURL: "+remoteUrl);
 		driver = new RemoteWebDriver(new URL(remoteUrl), caps);
