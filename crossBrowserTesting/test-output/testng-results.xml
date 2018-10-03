@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="134402" started-at="2018-10-03T17:47:51Z" finished-at="2018-10-03T17:50:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="134402" started-at="2018-10-03T17:47:51Z" finished-at="2018-10-03T17:50:06Z">
+      <class name="crossBrowserTesting.crossBrowserTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:crossBrowserTesting.crossBrowserTest@68c4039c]" name="init" is-config="true" duration-ms="29350" started-at="2018-10-03T17:47:51Z" finished-at="2018-10-03T17:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="appValidate()[pri:0, instance:crossBrowserTesting.crossBrowserTest@68c4039c]" name="appValidate" duration-ms="88539" started-at="2018-10-03T17:48:21Z" finished-at="2018-10-03T17:49:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appValidate -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:crossBrowserTesting.crossBrowserTest@68c4039c]" name="terminate" is-config="true" duration-ms="16485" started-at="2018-10-03T17:49:49Z" finished-at="2018-10-03T17:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- crossBrowserTesting.crossBrowserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
