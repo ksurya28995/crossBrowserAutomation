@@ -3,7 +3,11 @@ package commonUtilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
+/**
+ * Class is used to hold the elements of the UI ready with their finding IDs
+ * 
+ * @author surya.k.kumaresan
+ */
 public class phpTravelObjects {
 	
 	@FindBy(how=How.XPATH, using = "//span[@id='__symantecPKIClientDetector']//following-sibling::div[2]//input")
