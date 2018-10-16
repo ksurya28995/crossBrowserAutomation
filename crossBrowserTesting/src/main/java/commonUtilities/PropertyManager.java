@@ -8,7 +8,7 @@ import java.util.Properties;
  * 
  * @return returns the value for the key from the config file
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class PropertyManager {
 	final static String filename = "appConfig.properties";

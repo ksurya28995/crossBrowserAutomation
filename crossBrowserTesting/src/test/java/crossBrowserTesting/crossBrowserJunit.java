@@ -12,7 +12,7 @@ import commonUtilities.phpTravelActions;
 /**
  * This Class is used for opening the site and check some points in the site using JUNIT
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class crossBrowserJunit {
 	private static WebDriver driver = null;

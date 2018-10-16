@@ -34,7 +34,7 @@ public class commonUtilities {
 	 * 
 	 * @param testmode to decide which run tool to run with(junit/testng). 
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public WebDriver getDriver(String platform, String testMode) throws Exception {
 		DesiredCapabilities caps = new DesiredCapabilities();
@@ -67,7 +67,7 @@ public class commonUtilities {
 	 * 
 	 * @param csvName Name of the CSV
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public Map<String, String> readCsvData(String csvName) throws Exception {
 		Map<String, String> tabArray = new HashMap<String, String>();
@@ -81,7 +81,7 @@ public class commonUtilities {
 	 * 
 	 * @param csvName Name of the CSV
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public URI getFilepath(String csvName) throws Exception {
 		URI uri;
@@ -98,7 +98,7 @@ public class commonUtilities {
 	 * 
 	 * @param filePath CSV file path in URI format
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public Map<String, String> getCSVData(URI filePath) {
 		Map<String, String> tabArray = new HashMap<String, String>();
@@ -126,7 +126,7 @@ public class commonUtilities {
 	 * @param clmnName Name of the column to which data to be updated
 	 * @param value value to be added to the column
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void setCsvData(String csvName, String clmnName, String value) {
 		try {
@@ -171,7 +171,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem WebElement to wait for.
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void waitForElement(WebElement elem) {
 		elem = new WebDriverWait(driver, waitTime).until(ExpectedConditions.visibilityOf(elem));
@@ -182,7 +182,7 @@ public class commonUtilities {
 	 * 
 	 * @param url URL of the testing site
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void openURL(String url) throws Throwable {
 		driver.get(url);
@@ -192,7 +192,7 @@ public class commonUtilities {
 	/**
 	 * Method is used to provide a wait time of 3 secs for loading
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void getThreeSecWait() throws InterruptedException {
 		Thread.sleep(3000);
@@ -201,7 +201,7 @@ public class commonUtilities {
 	/**
 	 * Method is used to provide a wait time of 2 secs for loading
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void getTwoSecWait() throws InterruptedException {
 		Thread.sleep(2000);
@@ -210,7 +210,7 @@ public class commonUtilities {
 	/**
 	 * Method is used to provide a wait time of 5 secs for loading
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void getFiveSecWait() throws InterruptedException {
 		Thread.sleep(5000);
@@ -221,7 +221,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem The element on which to be hovered
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void hoverElement(WebElement elem) throws InterruptedException {
 		Actions action = new Actions(driver);
@@ -234,7 +234,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem The element on which CLick has to be made.
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void clickElement(WebElement elem) throws InterruptedException {
 		waitForElement(elem);
@@ -247,7 +247,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem to be clicked
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void actionClickElement(WebElement elem) throws InterruptedException {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", elem);
@@ -258,7 +258,7 @@ public class commonUtilities {
 	 * 
 	 * @param millisecs how much time to wait for.
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void threadsleep(int millisecs) throws InterruptedException {
 		Thread.sleep(millisecs);
@@ -269,7 +269,7 @@ public class commonUtilities {
 	 * 
 	 * @param element to appeared on the UI
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void verify(WebElement elem) throws InterruptedException {
 		waitForElement(elem);
@@ -281,7 +281,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem to which the text has to be entered, value to be entered
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void setTextBox(WebElement elem, String value) throws InterruptedException {
 		waitForElement(elem);
@@ -295,7 +295,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem to which the value has to be selected, value to be selected
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void setVirtualDropdown(WebElement elem, String value) throws InterruptedException {
 		waitForElement(elem);
@@ -309,7 +309,7 @@ public class commonUtilities {
 	/**
 	 * Method is used to provide the first focus like clicking outside after filing the dropdown
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void focusFirstInputField() {
 		try {
@@ -330,7 +330,7 @@ public class commonUtilities {
 	 * 
 	 * @param charLength length of the number generated
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public String generateRandomNumber(int charLength) {
 		return String.valueOf(charLength < 1 ? 0
@@ -343,7 +343,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem from which the text has to be fetched
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public String getTextBox(WebElement elem) {
 		waitForElement(elem);
@@ -355,7 +355,7 @@ public class commonUtilities {
 	 * 
 	 * @param path Id of the element
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public WebElement findElemById(String path) {
 		return driver.findElement(By.id(path));
@@ -366,7 +366,7 @@ public class commonUtilities {
 	 * 
 	 * @param path Xpath of the element
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public WebElement findElemByXpath(String path) {
 		return driver.findElement(By.xpath(path));
@@ -377,7 +377,7 @@ public class commonUtilities {
 	 * 
 	 * @param path of the element
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void clickElement(String path) {
 		if (path.contains("//"))
@@ -391,7 +391,7 @@ public class commonUtilities {
 	 * 
 	 * @param elem to be clicked
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void offsetClickElement(WebElement elem) throws InterruptedException {
 		waitForElement(elem);
@@ -405,7 +405,7 @@ public class commonUtilities {
 	/**
 	 * Method is used to close the browser after the execution
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void quitDriver() {
 		driver.quit();

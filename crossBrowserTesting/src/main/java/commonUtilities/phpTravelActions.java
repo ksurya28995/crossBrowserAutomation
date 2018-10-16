@@ -16,7 +16,7 @@ public class phpTravelActions extends phpTravelObjects {
 	 * 
 	 * @param Webdriver driver
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public phpTravelActions(WebDriver driverObj) throws Exception {
 		driver = driverObj;
@@ -27,7 +27,7 @@ public class phpTravelActions extends phpTravelObjects {
 	/**
 	 * Method is used to search some points on the site
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void searchHotel() throws Throwable {
 		arrData = commObj.readCsvData("phpInputs.csv");

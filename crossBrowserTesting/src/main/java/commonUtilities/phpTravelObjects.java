@@ -6,7 +6,7 @@ import org.openqa.selenium.support.How;
 /**
  * Class is used to hold the elements of the UI ready with their finding IDs
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class phpTravelObjects {
 	
